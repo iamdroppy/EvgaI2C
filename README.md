@@ -8,7 +8,11 @@ I found the pointer of nvapi_queryinterface from disassemblying Precision X. The
 
 I've found the piece of memory that the second parameter was pointing to:
 
-40 00 03 00 00 00 00 00 00 92 00 00 00 00 00 00 A8 DF 3C A1 9A 00 00 00 01 00 00 00 00 00 00 00 18 E0 3C A1 9A 00 00 00 01 00 00 00 FF FF 00 00
+40 00 03 00 00 00 00 00 00 92 00 00 00 00 00 00
+
+A8 DF 3C A1 9A 00 00 00 01 00 00 00 00 00 00 00 
+
+18 E0 3C A1 9A 00 00 00 01 00 00 00 FF FF 00 00
 
 This was setting G to 255.
 

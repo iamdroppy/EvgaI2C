@@ -54,3 +54,9 @@ bool ColorChanger::ChangePortColor(char color, char port) {
 bool ColorChanger::ChangeRGB(char r, char g, char b) {
 	return ChangePortColor(r, RGB_PORT_R) && ChangePortColor(g, RGB_PORT_G) && ChangePortColor(b, RGB_PORT_B);
 }
+
+int main() { // example
+	ColorChanger changer = ColorChanger();
+	changer.ChangeRGB(0x00, 0xFF, 0x00);
+	return 0;
+}

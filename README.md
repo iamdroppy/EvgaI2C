@@ -32,3 +32,4 @@ So, basically, pbI2cRegAddress sets which led it's binding to (as I said above, 
 
 I'm not a good C++ developer, but nevertheless there you go.
 
+I'm not sure if there'll be any problems with the version, but I guess not. I could've implemented it, but I didn't want to get that far.

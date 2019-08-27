@@ -8,19 +8,19 @@ I found the pointer of nvapi_queryinterface from disassemblying Precision X. The
 
 I've found the piece of memory that the second parameter was pointing to:
 
-40 00 03 00 00 00 00 00 00 92 00 00 00 00 00 00
+> 40 00 03 00 00 00 00 00 00 92 00 00 00 00 00 00
 
-A8 DF 3C A1 9A 00 00 00 01 00 00 00 00 00 00 00 
+> A8 DF 3C A1 9A 00 00 00 01 00 00 00 00 00 00 00 
 
-18 E0 3C A1 9A 00 00 00 01 00 00 00 FF FF 00 00
+> 18 E0 3C A1 9A 00 00 00 01 00 00 00 FF FF 00 00
 
 This was setting G to 255.
 
 EVGA communicates 3 times with i2c, one for each color. 
 
-R = 0x09
-G = 0x0A
-B = 0x0B
+> R = 0x09
+> G = 0x0A
+> B = 0x0B`
 
 There's also breathing etc present, but I didn't mess around with those: I got what I wanted.
 

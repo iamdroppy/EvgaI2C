@@ -6,7 +6,7 @@ I didn't knew EVGA sent through I2C, but I eventually figured out by disassembly
 
 I found the pointer of nvapi_queryinterface from disassemblying Precision X. Then I searched for how it works and found out it's I2C.
 
-I've found the piece of memory that the second parameter was pointing to:
+I've found the piece of memory that the second parameter (EBX or RBX??) was pointing to:
 
 > 40 00 03 00 00 00 00 00 00 92 00 00 00 00 00 00
 
